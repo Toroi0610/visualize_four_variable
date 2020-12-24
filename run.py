@@ -20,4 +20,4 @@ d = st.sidebar.slider("d", -1.0, 1.0, 0.0, 0.01)
 img_array = pred(model, a, b, c, d)
 img_array_min0max1 = (img_array - img_array.min()) / (img_array.max() - img_array.min())
 
-st.image(image=img_array_min0max1)
+st.image(image=img_array_min0max1, width=500)
